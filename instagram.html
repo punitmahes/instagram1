@@ -169,7 +169,7 @@
 	}
 	.nextbar{
 	width:52.8%;
-	height:600px;
+	height:auto;
 	background-color:white;
 	margin-left:200px;
 	margin-top:0;
@@ -254,7 +254,30 @@
 	color:#e8e8e8;
 	font-family:halvetica;
 	}
+	.commentbox{
+	position:relative;
+	width:90.3%;
+	height:50px;
+	border: solid #e8e8e8 1px;
+	padding-left:20px;
+	border-right:none;
 	
+	
+	}
+	
+	
+	#post{
+	padding-top:15px;
+	position:relative;
+	float:right;
+	border:none;
+	background-color:white;
+	color:blue;
+	padding-right:15px;
+	}
+	.hover:post{
+	color:28FFFF;
+	}
  </style>
  <body class="body">
 <div class="upperbar">
@@ -315,9 +338,15 @@
 			</span></p>
 			<button onclick="showmore()" id="showmores">more</button>
 			<p class="comments">View all comments<p>
+			
+			<input class="commentbox" type="text" placeholder="add a comment"</input>
+			<div id="postbutton">
+			<input id="post"type="submit" value="Post"></input>
 			</div>
-</div>
+			</div>
 
+
+</div>
  </body>
  <script>
 	function showmore() {
